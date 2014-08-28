@@ -15,6 +15,8 @@ This is intended to be a short and informal introduction to HMMs.
 
 \section{Introduction}
 \subsection{What is a hidden Markov model?}
+A \textbf{hidden Markov model} (HMM) is a common tool used to analyze sequential and time-based processes. As a very informal definition, the values that are generated from a standard Markov model are generated with probabilities that are dependent on the 'state' of the model at any given time. At its core, this means there are two types of data we are primarily concerned with: a sequence of states, and a sequence of observations. In the case of a HMM, the observations are of course known, but the sequence of states is not (and therefore "hidden"). Additionally, we are often interested in the parameters that describe how data is generated from the model and how the system switches back and forth between different states.
+
 \subsection{What kind of data is well modeled by a HMM?}
 \subsection{Well-known examples of HMMs in biology}
 
@@ -51,4 +53,4 @@ We have a state to represent GC-rich regions and another for regions that are no
 \subsection{Estimating HMM parameters with the Baum-Welch algorithm}
 \subsection{Predicting the most likely state sequence using the Viterbi algorithm}
 
-\end{document}  
+\end{document} 
