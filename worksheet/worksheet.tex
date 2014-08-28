@@ -3,28 +3,46 @@
 \geometry{letterpaper}
 \usepackage{graphicx}
 \usepackage{amssymb}
+\usepackage{hyperref}
 
 \title{Hidden Markov Models}
-\author{Rapid Learning Session 2014}
-\date{}
+\date{Rapid Learning Session 2014}
 
 \begin{document}
 \maketitle
 
+This is intended to be a short and informal introduction to HMMs.
+
 \section{Introduction}
 \subsection{What is a hidden Markov model?}
 \subsection{What kind of data is well modeled by a HMM?}
-\subsection{Well known examples of HMMs in practice}
+\subsection{Well-known examples of HMMs in biology}
+
+\begin{itemize}
+\item Gene finding (GENSCAN: \url{http://www.ncbi.nlm.nih.gov/pubmed/9149143}, \url{http://genes.mit.edu/GENSCAN.html})
+\item Modeling protein sequences and homologs (HMMER: \url{http://hmmer.janelia.org/})
+\item Chromatin state annotation (ChromHMM: \url{http://www.ncbi.nlm.nih.gov/pubmed/22373907}, \url{http://compbio.mit.edu/ChromHMM/})
+\end{itemize}
 
 \section{Algorithms}
 \subsection{Formal Definition of a HMM}
 \subsection{Interpretation}
-\subsection{The Baum-Welch Algorithm}
 \subsection{The Viterbi Algorithm}
+\subsection{The Baum-Welch Algorithm}
+
+This is the algorithm used to learn the parameters of an HMM given unlabeled training data. 
+It is a special case of the expectation-maximization (EM) algorithm. These types of algorithms work by iterating over two steps: the E-step and the M-step.
+
+In the case of HMMs, if we knew the state that each emission came from, then we could easily infer the emission and transition probabilities (we will do this in Exercise 1). However, in the case of unlabeled data, we do not have this information. The idea is therefore to initialize the parameters with some values then find the most likely state assignment (E-step). With that assignment in hand, we now have labeled data and can use maximum likelihood estimation to update our estimates for the emission and transition parameter values (M-step). We keep iterating between the E- and M-steps until convergence. It is important to note that we may not arrive at an optimal solution. Different initializations of the parameter values can lead to different results.
+
+The inference of the most likely sequence of states (E-Step) is done with the forward-backward algorithm. The forward-backwards algorithm returns a probability distribution over the states for each emission. If you want to use hard EM, you would select the single most likely state (i.e. the state with the highest assigned probability). A better idea is to use soft EM where you keep the soft assignments to states (i.e. the probability distribution).
+
 \subsection{Caveats}
 
 \section{Exercise 1}
 \subsection{Problem Statement}
+Consider a simple two-state HMM that models the GC content of a DNA sequence. 
+We have a state to represent GC-rich regions and another for regions that are not GC rich.
 \subsection{Estimating emission probabilities for individual states}
 \subsection{Estimating transition probabilities between states}
 
