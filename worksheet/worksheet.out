@@ -1,18 +1,16 @@
 \BOOKMARK [1][-]{section.1}{Introduction}{}% 1
 \BOOKMARK [2][-]{subsection.1.1}{What is a hidden Markov model?}{section.1}% 2
-\BOOKMARK [2][-]{subsection.1.2}{What kind of data is well modeled by a HMM?}{section.1}% 3
-\BOOKMARK [2][-]{subsection.1.3}{Well-known examples of HMMs in biology}{section.1}% 4
-\BOOKMARK [1][-]{section.2}{Algorithms}{}% 5
-\BOOKMARK [2][-]{subsection.2.1}{Formal Definition of a HMM}{section.2}% 6
-\BOOKMARK [2][-]{subsection.2.2}{Interpretation}{section.2}% 7
-\BOOKMARK [2][-]{subsection.2.3}{The Viterbi Algorithm}{section.2}% 8
-\BOOKMARK [2][-]{subsection.2.4}{The Baum-Welch Algorithm}{section.2}% 9
-\BOOKMARK [2][-]{subsection.2.5}{Caveats}{section.2}% 10
+\BOOKMARK [2][-]{subsection.1.2}{Well-known examples of HMMs in biology}{section.1}% 3
+\BOOKMARK [1][-]{section.2}{Algorithms}{}% 4
+\BOOKMARK [2][-]{subsection.2.1}{Formal Definition of a HMM}{section.2}% 5
+\BOOKMARK [2][-]{subsection.2.2}{Assumptions}{section.2}% 6
+\BOOKMARK [2][-]{subsection.2.3}{Interpretation}{section.2}% 7
+\BOOKMARK [2][-]{subsection.2.4}{The Viterbi Algorithm}{section.2}% 8
+\BOOKMARK [2][-]{subsection.2.5}{The Baum-Welch Algorithm}{section.2}% 9
+\BOOKMARK [2][-]{subsection.2.6}{Caveats}{section.2}% 10
 \BOOKMARK [1][-]{section.3}{Exercise 1}{}% 11
-\BOOKMARK [2][-]{subsection.3.1}{Problem Statement}{section.3}% 12
-\BOOKMARK [2][-]{subsection.3.2}{Estimating emission probabilities for individual states}{section.3}% 13
-\BOOKMARK [2][-]{subsection.3.3}{Estimating transition probabilities between states}{section.3}% 14
-\BOOKMARK [1][-]{section.4}{Exercise 2}{}% 15
-\BOOKMARK [2][-]{subsection.4.1}{Problem Statement}{section.4}% 16
-\BOOKMARK [2][-]{subsection.4.2}{Estimating HMM parameters with the Baum-Welch algorithm}{section.4}% 17
-\BOOKMARK [2][-]{subsection.4.3}{Predicting the most likely state sequence using the Viterbi algorithm}{section.4}% 18
+\BOOKMARK [2][-]{subsection.3.1}{Estimate the emission probabilities for each of the two states}{section.3}% 12
+\BOOKMARK [2][-]{subsection.3.2}{Estimate the transition probabilities between states}{section.3}% 13
+\BOOKMARK [1][-]{section.4}{Exercise 2}{}% 14
+\BOOKMARK [2][-]{subsection.4.1}{Estimate the parameters of the HMM}{section.4}% 15
+\BOOKMARK [2][-]{subsection.4.2}{Predict the most likely state sequence using the parameters you just estimated}{section.4}% 16
