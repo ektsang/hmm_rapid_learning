@@ -34,6 +34,18 @@ A \textbf{hidden Markov model} (HMM) is a common tool used to analyze sequential
 
 \section{Algorithms}
 \subsection{Formal Definition of a HMM}
+An HMM is defined by:
+\begin{itemize}
+\item A set of $s$ states.
+\item An alphabet of $n$ possible emissions from each state.
+\item A vector of length $s$ where the $i$th entry is the probability of starting in state $i$.
+\item An $s\times s$ transition matrix $A$ where $A_{ij}$ is the probability of going from state $i$ to state $j$.
+\item An $s \times n$ emission matrix $B$ where $B_{ij}$ is the probability that state $i$ emits symbol $j$.
+\end{itemize}
+
+\subsection{Assumptions}
+The state at time $t$ depends only on the state at time $t-1$.\\
+The transition and emission probabilities are constant over time.
 \subsection{Interpretation}
 \subsection{The Viterbi Algorithm}
 \subsection{The Baum-Welch Algorithm}
