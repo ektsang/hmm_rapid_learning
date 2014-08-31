@@ -1,3 +1,4 @@
 # ignore worksheet files except for the .tex file
 /worksheet/*
 !/worksheet/worksheet.tex
+.DS_Store
