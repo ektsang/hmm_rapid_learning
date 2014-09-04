@@ -21,7 +21,7 @@ This is intended to be a short and informal introduction to HMMs.
 
 \section{Introduction}
 \subsection{What is a hidden Markov model?}
-In general, a \textbf{Markov process} is a random process that swtiches between different states.
+In general, a \textbf{Markov process} is a random process that switches between different states.
 %generates values with probabilities that are dependent on the state of the system at that time. 
 %The system randomly switches between states 
 according to some \textit{transition probabilities}. The probability of being in a particular state at a given time step is dependent only on the the state at the previous time step - this is known as the \textbf{Markov property}. %When we look at data generated from a Markov process, we can see an ordered sequence of states (e.g. A, A, A, B, B) paired with values that were generated at that point in time (e.g. 1, 1, 2, 4, 5). We can use these kinds of data to calculate the transition probabilities between states and also the probabilities of generating particular values given the state of the system at time $t$.
@@ -71,7 +71,7 @@ An HMM is defined by:
 \subsection{Assumptions}
 The state at time $t$ depends only on the state at time $t-1$.\\
 The transition and emission probabilities are constant over time.
-\subsection{Interpretation}
+%\subsection{Interpretation}
 \subsection{The Viterbi Algorithm}
 \subsection{The Baum-Welch Algorithm}
 
@@ -122,6 +122,8 @@ However, this time the states are also unknown.
 This time we will learn the parameters of the HMM without knowing the true sequence of states that generated the observations! 
 
 [Use starter code in exercise2.R]
+
+\textit{Hint}: Think about how you want to initialize the algorithm for the parameter estimation. 
 
 \subsection{Estimate the parameters of the HMM}
 Emission probabilities
